@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>AirReservations</title>
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #f5f6f8;
+      }
+    
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+      }
+
+      /* Contenedor principal */
+      .login-container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 320px;
+      }
+
+      /* Título */
+      .login-container h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 24px;
+      }
+
+      /* Formulario */
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .login-form label {
+        font-size: 14px;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      .login-form input {
+        padding: 12px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .login-form input:focus {
+        border-color: #1e6fd9;
+        outline: none;
+      }
+
+      /* Botón */
+      .login-form button {
+        background: linear-gradient(to right, #1e90ff, #1c75d8);
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .login-form button:hover {
+        background-color: #155fb1;
+      }
+
+      /* Link de registro */
+      .register-link {
+        margin-top: 16px;
+        font-size: 14px;
+      }
+
+      .register-link a {
+        color: #1e6fd9;
+        text-decoration: none;
+      }
+
+      .register-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">Login</div>
+        <div class="nav-right">
+          <a href="/index.html">Home</a>
+          <a href="/src/login.html">Login</a>
+          <a href="/src/register.html">Register</a>
+          <a href="/src/reservations.html">Reservations</a>
+          <a href="/src/flights.html">Flights</a>
+          <a href="/src/passengers.html">Passengers</a>
+          <a href="/src/travels.html">Travels</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="login-container">
+        <h1>Login</h1>
+        <form class="login-form" action="#" method="post">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="user@example.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+
+          <button type="submit">Log in</button>
+        </form>
+        <p class="register-link">
+          Don't have an account? <a href="/src/register.html">Register</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

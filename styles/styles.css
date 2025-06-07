@@ -1,0 +1,74 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #1e90ff, #1c75d8);
+  padding: 10px 30px;
+  color: white;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: url('../assets/WhatsApp\ Image\ 2025-06-04\ at\ 10.41.58\ PM.jpeg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+    background-color: rgba(90, 90, 90, 0.575);
+    border-radius: 20px;
+    padding: 10px 10px 30px 10px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #1e6fd9;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #155fb1;
+}
