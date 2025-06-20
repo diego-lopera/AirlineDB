@@ -5,45 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <title>AirReservations</title>
-    <style>
-      .container {
-        margin: 40px auto;
-        width: 80%;
-        max-width: 900px;
-      }
-      h2 {
-        text-align: center;
-        color: #2c3e50;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        background-color: white;
-      }
-      th,
-      td {
-        padding: 12px;
-        border-bottom: 1px solid #ddd;
-        text-align: left;
-      }
-      th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-      }
-    </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="nav-left">Passengers</div>
-        <div class="nav-right">
-          <a href="/index.html">Home</a>
-          <a href="/src/login.html">Login</a>
-          <a href="/src/register.html">Register</a>
-          <a href="/src/reservations.html">Reservations</a>
-          <a href="/src/flights.html">Flights</a>
-          <a href="/src/passengers.html">Passengers</a>
-          <a href="/src/travels.html">Travels</a>
+      <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">reservations</a>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="mainNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/reservations.html"
+                  >Reservations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/flights.html">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/passengers.html">Passengers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/travels.html">Travels</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -163,5 +171,5 @@
         </tr>
       </table>
     </div>
-  </body>
+  </body>
 </html>
