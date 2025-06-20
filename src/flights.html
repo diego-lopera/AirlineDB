@@ -4,120 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <title>AirReservations</title>
-    <style>
-      .container {
-        margin: 40px auto;
-        width: 80%;
-        max-width: 900px;
-      }
-      h2 {
-        text-align: center;
-        color: #2c3e50;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        background-color: white;
-      }
-      th,
-      td {
-        padding: 12px;
-        border-bottom: 1px solid #ddd;
-        text-align: left;
-      }
-      th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="nav-left">Flights</div>
-        <div class="nav-right">
-          <a href="/index.html">Home</a>
-          <a href="/src/login.html">Login</a>
-          <a href="/src/register.html">Register</a>
-          <a href="/src/reservations.html">Reservations</a>
-          <a href="/src/flights.html">Flights</a>
-          <a href="/src/passengers.html">Passengers</a>
-          <a href="/src/travels.html">Travels</a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Flights</a>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="mainNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/reservations.html"
+                  >Reservations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/flights.html">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/passengers.html">Passengers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/travels.html">Travels</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
-    <div class="container">
+    <div class="container mt-4">
       <h2>Flights</h2>
-      <table>
-        <tr>
-          <th>Flight ID</th>
-          <th>Aircraft Reference</th>
-          <th>Capacity</th>
-          <th>Flight Status</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>A320-001</td>
-          <td>180</td>
-          <td>Programado</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>B737-002</td>
-          <td>160</td>
-          <td>En vuelo</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>A330-003</td>
-          <td>250</td>
-          <td>Demorado</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>B787-004</td>
-          <td>300</td>
-          <td>Cancelado</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>A319-005</td>
-          <td>150</td>
-          <td>Programado</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>E190-006</td>
-          <td>120</td>
-          <td>En vuelo</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>A321-007</td>
-          <td>200</td>
-          <td>Demorado</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>CRJ900-008</td>
-          <td>100</td>
-          <td>Programado</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>B777-009</td>
-          <td>320</td>
-          <td>Programado</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>A350-010</td>
-          <td>280</td>
-          <td>Programado</td>
-        </tr>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+          <thead>
+            <tr>
+              <th>Flight ID</th>
+              <th>Aircraft Reference</th>
+              <th>Capacity</th>
+              <th>Flight Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>A320-001</td>
+              <td>180</td>
+              <td>Programado</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>B737-002</td>
+              <td>160</td>
+              <td>En vuelo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>A330-003</td>
+              <td>250</td>
+              <td>Demorado</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>B787-004</td>
+              <td>300</td>
+              <td>Cancelado</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>A319-005</td>
+              <td>150</td>
+              <td>Programado</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>E190-006</td>
+              <td>120</td>
+              <td>En vuelo</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>A321-007</td>
+              <td>200</td>
+              <td>Demorado</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>CRJ900-008</td>
+              <td>100</td>
+              <td>Programado</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>B777-009</td>
+              <td>320</td>
+              <td>Programado</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>A350-010</td>
+              <td>280</td>
+              <td>Programado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

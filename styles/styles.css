@@ -8,28 +8,39 @@
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: linear-gradient(to right, #1e90ff, #1c75d8);
-  padding: 10px 30px;
-  color: white;
 }
 
-.nav-left {
+.navbar-brand {
   font-weight: bold;
   font-size: 18px;
+  color: white !important;
 }
 
-.nav-right a {
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
+.nav-link {
+  color: white !important;
   font-size: 16px;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
-.nav-right a:hover {
-  text-decoration: underline;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #f8f9fa !important;
 }
 
 /* Hero Section */
@@ -37,7 +48,8 @@
   position: relative;
   width: 100%;
   height: calc(100vh - 60px);
-  background: url('../assets/WhatsApp\ Image\ 2025-06-04\ at\ 10.41.58\ PM.jpeg') no-repeat center center/cover;
+  background: url("../assets/WhatsApp\ Image\ 2025-06-04\ at\ 10.41.58\ PM.jpeg")
+    no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,9 +59,9 @@
 }
 
 .hero-content {
-    background-color: rgba(90, 90, 90, 0.575);
-    border-radius: 20px;
-    padding: 10px 10px 30px 10px;
+  background-color: rgba(90, 90, 90, 0.575);
+  border-radius: 20px;
+  padding: 10px 10px 30px 10px;
 }
 
 .hero-content h1 {
@@ -71,4 +83,25 @@
 
 .btn:hover {
   background-color: #155fb1;
+}
+
+/* Tablas */
+
+.container {
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th {
+  color: #2c3e50;
 }
